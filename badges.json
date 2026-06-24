@@ -222,6 +222,19 @@
       "type": "filter"
     },
     {
+      "id": "av1",
+      "groupId": "video-codec",
+      "name": "AV1",
+      "pattern": "(?i)\\bav[\\s._-]?1\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/AV1.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
       "id": "hevc",
       "groupId": "video-codec",
       "name": "HEVC",
@@ -378,6 +391,19 @@
       "type": "filter"
     },
     {
+      "id": "aac",
+      "groupId": "audio-tech",
+      "name": "AAC",
+      "pattern": "(?i)\\b(he[\\s._-]?)?aac([\\s._-]*lc)?(?![a-z])",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/AAC.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
       "id": "71-audio",
       "groupId": "audio-channels",
       "name": "7.1 Audio",
@@ -396,6 +422,19 @@
       "name": "5.1 Audio",
       "pattern": "(?i)\\b(5\\.1|5-1|6ch|6\\s*channel)\\b",
       "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/5_1_audio.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "20-audio",
+      "groupId": "audio-channels",
+      "name": "2.0 Audio",
+      "pattern": "(?i)\\b(2\\.0|2-0|2ch|2\\s*channel|stereo)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/2_0_audio.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
