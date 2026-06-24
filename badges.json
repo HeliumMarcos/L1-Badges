@@ -222,71 +222,6 @@
       "type": "filter"
     },
     {
-      "id": "av1",
-      "groupId": "video-codec",
-      "name": "AV1",
-      "pattern": "(?i)\\bav[\\s._-]?1\\b",
-      "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/AV1.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "hevc",
-      "groupId": "video-codec",
-      "name": "HEVC",
-      "pattern": "(?i)\\b(hevc|h[\\s._-]?265|x265)\\b",
-      "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/HEVC_transparent_4x.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "avc",
-      "groupId": "video-codec",
-      "name": "AVC",
-      "pattern": "(?i)\\b(avc|h[\\s._-]?264|x264)\\b",
-      "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/AVC_transparent_4x.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "10bit",
-      "groupId": "bit-depth",
-      "name": "10Bit",
-      "pattern": "(?i)\\b(10[\\s._-]?bit|hi10p)\\b",
-      "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/10Bit_transparent_4x.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "8bit",
-      "groupId": "bit-depth",
-      "name": "8Bit",
-      "pattern": "(?i)\\b(8[\\s._-]?bit)\\b",
-      "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/8Bit_transparent_4x.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
       "id": "dolby-atmos",
       "groupId": "audio-tech",
       "name": "Dolby Atmos",
@@ -441,6 +376,71 @@
       "tagStyle": "filled and bordered",
       "isEnabled": true,
       "type": "filter"
+    },
+    {
+      "id": "av1",
+      "groupId": "video-codec",
+      "name": "AV1",
+      "pattern": "(?i)\\bav[\\s._-]?1\\b",
+      "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/AV1.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "hevc",
+      "groupId": "video-codec",
+      "name": "HEVC",
+      "pattern": "(?i)\\b(hevc|h[\\s._-]?265|x265)\\b",
+      "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/HEVC_transparent_4x.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "avc",
+      "groupId": "video-codec",
+      "name": "AVC",
+      "pattern": "(?i)\\b(avc|h[\\s._-]?264|x264)\\b",
+      "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/AVC_transparent_4x.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "10bit",
+      "groupId": "bit-depth",
+      "name": "10Bit",
+      "pattern": "(?i)\\b(10[\\s._-]?bit|hi10p)\\b",
+      "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/10Bit_transparent_4x.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "8bit",
+      "groupId": "bit-depth",
+      "name": "8Bit",
+      "pattern": "(?i)\\b(8[\\s._-]?bit)\\b",
+      "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/8Bit_transparent_4x.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
     }
   ],
   "groups": [
@@ -466,13 +466,6 @@
       "isExpanded": true
     },
     {
-      "id": "bit-depth",
-      "name": "Bit Depth",
-      "color": "#00000000",
-      "borderColor": "#00000000",
-      "isExpanded": true
-    },
-    {
       "id": "audio-tech",
       "name": "Audio Tech",
       "color": "#00000000",
@@ -489,6 +482,13 @@
     {
       "id": "video-codec",
       "name": "Video Codec",
+      "color": "#00000000",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "bit-depth",
+      "name": "Bit Depth",
       "color": "#00000000",
       "borderColor": "#00000000",
       "isExpanded": true
