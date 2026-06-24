@@ -466,13 +466,6 @@
       "isExpanded": true
     },
     {
-      "id": "video-codec",
-      "name": "Video Codec",
-      "color": "#00000000",
-      "borderColor": "#00000000",
-      "isExpanded": true
-    },
-    {
       "id": "bit-depth",
       "name": "Bit Depth",
       "color": "#00000000",
@@ -492,6 +485,13 @@
       "color": "#00000000",
       "borderColor": "#00000000",
       "isExpanded": true
-    }
+    },
+    {
+      "id": "video-codec",
+      "name": "Video Codec",
+      "color": "#00000000",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
   ]
 }
