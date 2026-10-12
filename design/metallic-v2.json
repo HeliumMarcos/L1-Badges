@@ -555,10 +555,10 @@
     {
       "file": "stream-appletv.png",
       "category": "platform",
-      "main": "tv+",
+      "main": "tv",
       "subtitle": "",
-      "palette": "Preserve original Apple symbol with tv+, chrome/silver finish, no invented word Apple.",
-      "status": "pending",
+      "palette": "Preserve original Apple symbol and lowercase tv. Chrome/silver finish. No extra plus or invented Apple word.",
+      "status": "ready",
       "original": "Originals/metallic-v2/stream-appletv.png",
       "optimized": "Badges/v2/stream-appletv.png"
     },
@@ -568,7 +568,7 @@
       "main": "crunchyroll",
       "subtitle": "",
       "palette": "Preserve original eye/swirl symbol and official orange as orange polished metal.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/stream-crunchyroll.png",
       "optimized": "Badges/v2/stream-crunchyroll.png"
     },
@@ -580,7 +580,8 @@
       "palette": "Preserve official Disney lettering and arc/plus, glossy blue/silver finishes.",
       "status": "pending",
       "original": "Originals/metallic-v2/stream-disney.png",
-      "optimized": "Badges/v2/stream-disney.png"
+      "optimized": "Badges/v2/stream-disney.png",
+      "generationIssue": "Image generation was rejected by the service; the existing Disney badge remains active."
     },
     {
       "file": "stream-hulu.png",
@@ -588,7 +589,7 @@
       "main": "hulu",
       "subtitle": "",
       "palette": "Preserve official Hulu green, glossy metallic green and dark edges.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/stream-hulu.png",
       "optimized": "Badges/v2/stream-hulu.png"
     },
@@ -597,8 +598,8 @@
       "category": "platform",
       "main": "iTunes",
       "subtitle": "",
-      "palette": "Preserve original colorful Apple/iTunes musical symbol; polished metal colors with chrome lettering.",
-      "status": "pending",
+      "palette": "Preserve the original Apple symbol and iTunes wordmark in polished silver/chrome with restrained golden edges. No extra musical symbol.",
+      "status": "ready",
       "original": "Originals/metallic-v2/stream-itunes.png",
       "optimized": "Badges/v2/stream-itunes.png"
     },
