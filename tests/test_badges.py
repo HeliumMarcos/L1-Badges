@@ -103,15 +103,17 @@ class BadgesTest(unittest.TestCase):
     def test_metallic_publication_preserves_all_matching_rules(self):
         legacy = json.loads((ROOT / "badges-legacy.json").read_text(encoding="utf-8"))
         self.assertEqual(DATA["groups"], legacy["groups"])
-        self.assertEqual(len(DATA["filters"]), len(legacy["filters"]))
-        for current, previous in zip(DATA["filters"], legacy["filters"]):
+        by_id = {entry["id"]: entry for entry in DATA["filters"]}
+        self.assertEqual(set(by_id), {entry["id"] for entry in legacy["filters"]} | {"ma"})
+        for previous in legacy["filters"]:
+            current = by_id[previous["id"]]
             self.assertEqual({key: value for key, value in current.items() if key != "imageURL"},
                              {key: value for key, value in previous.items() if key != "imageURL"})
 
     def test_only_ready_metallic_images_are_activated_and_originals_preserved(self):
         plan = json.loads((ROOT / "design" / "metallic-v2.json").read_text(encoding="utf-8"))
         by_file = {asset["file"]: asset for asset in plan["assets"]}
-        self.assertEqual(len(by_file), 75)
+        self.assertEqual(len(by_file), 76)
         for entry in DATA["filters"]:
             if "/Badges/v2/" not in entry["imageURL"]:
                 continue
@@ -145,6 +147,35 @@ class BadgesTest(unittest.TestCase):
             self.assertEqual(struct.unpack(">II", optimized[16:24]), (640, 240))
             entry = next(f for f in DATA["filters"] if f["imageURL"].rsplit("/", 1)[-1] == filename)
             self.assertIn("/dolby-unified/", entry["imageURL"])
+
+    def test_movies_anywhere_is_not_master_audio_or_a_title_word(self):
+        positive = [
+            "Filme (2026) MA 2160p WEB-DL DDP5.1 H.265.mkv",
+            "Filme.2026.MA.2160p.WEB-DL.AAC2.0.mkv",
+            "Filme (2026) Movies Anywhere 2160p WEB-DL AAC2.0.mkv",
+            "Filme.2026.MoviesAnywhere.2160p.WEB-DL.AAC2.0.mkv",
+            "Filme (2026) 2160p MA WEB-DL DTS-HD.MA7.1 H.265.mkv",
+            "Filme (2026) 2160p WEB-DL MA DTS-HD MA 7.1 H.265.mkv",
+            "Filme (2026) 2160p WEB-DL DTS-HD MA 7.1 MA H.265.mkv",
+            "Show S01E01 MA 1080p WEB-DL AAC2.0.mkv",
+            "🎬 Filme - (2026)\n💿 WEB-DL   📺 MA   ⚙️ H.265",
+        ]
+        negative = [
+            "Ma (2019) 1080p WEB-DL AAC2.0.mkv",
+            "Movies Anywhere (2026) 1080p WEB-DL AAC2.0.mkv",
+            "Show S01E01 Ma and Dad 1080p WEB-DL AAC2.0.mkv",
+            "Filme (2026) 2160p BluRay DTS-HD.MA7.1 H.265.mkv",
+            "Filme (2026) 2160p BluRay DTS-HD MA 7.1 H.265.mkv",
+            "Filme (2026) 2160p BluRay DTS HD   MA 7.1 H.265.mkv",
+            "Filme (2026) 2160p BluRay DTS-MA 7.1 H.265.mkv",
+            "Filme (2026) 2160p BluRay DTS MA 7.1 H.265.mkv",
+        ]
+        for text in positive:
+            with self.subTest(text=text):
+                self.assertEqual(matched(text, "streaming"), {"ma"})
+        for text in negative:
+            with self.subTest(text=text):
+                self.assertNotIn("ma", matched(text, "streaming"))
 
 
 if __name__ == "__main__":

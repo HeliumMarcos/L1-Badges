@@ -24,4 +24,22 @@ check('DTS-HD.MA7.1 DTS-X', 'audio-tech', ['dts-hd-master-audio','dts-x']);
 check('E-AC-3 5.1', 'audio-tech', ['dolby-digital-plus']);
 check('TrueHD7.1.4', 'audio-channels', ['714-audio']);
 check('MP32.0', 'audio-channels', ['20-audio']);
-print('Java Pattern: ' + compiled.length + ' filters compiled; 5 cases passed.');
+var maPositive = [
+    'Movie (2026) MA 2160p WEB-DL DDP5.1 H.265.mkv',
+    'Movie.2026.MoviesAnywhere.2160p.WEB-DL.AAC2.0.mkv',
+    'Movie (2026) 2160p WEB-DL MA DTS-HD MA 7.1 H.265.mkv',
+    'Movie (2026) 2160p WEB-DL DTS-HD MA 7.1 MA H.265.mkv',
+    'Show S01E01 MA 1080p WEB-DL AAC2.0.mkv',
+    '💿 WEB-DL   📺 MA   ⚙️ H.265'
+];
+var maNegative = [
+    'Ma (2019) 1080p WEB-DL AAC2.0.mkv',
+    'Movies Anywhere (2026) 1080p WEB-DL AAC2.0.mkv',
+    'Show S01E01 Ma and Dad 1080p WEB-DL AAC2.0.mkv',
+    'Movie (2026) 2160p BluRay DTS-HD MA 7.1 H.265.mkv',
+    'Movie (2026) 2160p BluRay DTS HD   MA 7.1 H.265.mkv',
+    'Movie (2026) 2160p BluRay DTS-MA 7.1 H.265.mkv'
+];
+maPositive.forEach(function (text) { check(text,'streaming',['ma']); });
+maNegative.forEach(function (text) { check(text,'streaming',[]); });
+print('Java Pattern: ' + compiled.length + ' filters compiled; ' + (5+maPositive.length+maNegative.length) + ' cases passed.');

@@ -12,14 +12,14 @@ Os nomes dos menus variam conforme a versão do aplicativo.
 ## Coleção metálica — publicação por famílias
 
 A URL principal passa a usar as novas imagens em `Badges/v2/` à medida que
-cada família é concluída e revisada. Somente as URLs das imagens mudam;
+cada família é concluída e revisada. Nos 74 filtros anteriores, somente as URLs das imagens mudam;
 IDs, expressões e grupos são preservados. As imagens anteriores continuam
 no repositório e a lista anterior está em `badges-legacy.json`.
 
 Os PNGs para TV mantêm transparência, têm até 960×240 pixels e são
 redimensionados/compactados localmente com autorização do usuário.
 As imagens grandes selecionadas ficam em `Originals/metallic-v2/`.
-O progresso e o brief de cada uma das 75 imagens estão em
+O progresso e o brief de cada uma das 76 imagens estão em
 `design/metallic-v2.json`. Prata/cromo e dourado seguem o DTS-HD aprovado;
 cores oficiais são preservadas em marcas como TrueHD e nas plataformas.
 As artes são geradas pela ferramenta de imagens integrada, uma por badge.
@@ -35,6 +35,28 @@ para evitar aproveitar imagens anteriores em cache. Com `sharp` disponível,
 oito originais e nas oito versões otimizadas. Para remontar usando as
 camadas salvas: `node scripts/compose-dolby.cjs --rebuild`, seguido de
 `node scripts/optimize-metallic.cjs` com os oito nomes da família.
+
+Estado da coleção: **75 imagens metálicas concluídas e publicadas**, incluindo
+Movies Anywhere. Disney+ mantém a imagem anterior, porque duas tentativas de
+geração foram recusadas pelo serviço; nenhuma imagem incompleta é publicada.
+O 4K usa o modelo sem moldura do 8K em `Badges/v2/4k-matched/`.
+
+## Movies Anywhere — MA
+
+Adicionado um filtro novo no grupo Streaming, totalizando **75 filtros**.
+Reconhece `MA`, `Movies Anywhere` e `MoviesAnywhere` no trecho técnico do
+nome, além do campo `📺 MA` entregue pelo Stream Helium. Ignora `MA` dentro
+de `DTS-HD MA` e não confunde o filme `Ma (2019)` nem subtítulos de episódios.
+Plataforma e Master Audio podem coexistir no mesmo arquivo.
+
+Exemplo: `Filme (2026) MA 2160p WEB-DL DTS-HD MA 7.1 H.265.mkv` recebe
+Movies Anywhere e DTS-HD Master Audio separadamente. O badge é inspirado
+no [símbolo do site oficial](https://moviesanywhere.com/logo.png), com cromo
+e detalhes metálicos azul/violeta. A referência está preservada em
+`Originals/references/movies-anywhere-official.png`.
+
+As expressões foram verificadas também em Java Pattern, usado pelo Nuvio:
+`jjs -scripting scripts/validate-java-patterns.js -- badges.json`.
 
 ## Ampliação de 12/10/2026
 

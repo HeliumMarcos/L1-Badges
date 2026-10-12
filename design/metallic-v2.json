@@ -139,7 +139,7 @@
       "main": "5.1.2",
       "subtitle": "",
       "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/5_1_2_audio.png",
       "optimized": "Badges/v2/5_1_2_audio.png"
     },
@@ -149,7 +149,7 @@
       "main": "5.1",
       "subtitle": "",
       "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/5_1_audio.png",
       "optimized": "Badges/v2/5_1_audio.png"
     },
@@ -169,7 +169,7 @@
       "main": "6.0",
       "subtitle": "",
       "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/6_0_audio.png",
       "optimized": "Badges/v2/6_0_audio.png"
     },
@@ -179,7 +179,7 @@
       "main": "6.1",
       "subtitle": "",
       "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/6_1_audio.png",
       "optimized": "Badges/v2/6_1_audio.png"
     },
@@ -189,7 +189,7 @@
       "main": "7.1.4",
       "subtitle": "",
       "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/7_1_4_audio.png",
       "optimized": "Badges/v2/7_1_4_audio.png"
     },
@@ -199,7 +199,7 @@
       "main": "7.1",
       "subtitle": "",
       "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/7_1_audio.png",
       "optimized": "Badges/v2/7_1_audio.png"
     },
@@ -279,7 +279,7 @@
       "main": "CH",
       "subtitle": "",
       "palette": "Silver speaker, golden CH. No made-up count.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/channels_audio.png",
       "optimized": "Badges/v2/channels_audio.png"
     },
@@ -753,6 +753,18 @@
       "status": "ready",
       "original": "Originals/metallic-v2/WEBRip_transparent_4x.png",
       "optimized": "Badges/v2/WEBRip_transparent_4x.png"
+    },
+    {
+      "file": "stream-moviesanywhere.png",
+      "category": "platform",
+      "main": "Movies Anywhere",
+      "subtitle": "",
+      "palette": "Chrome lettering and cyan/blue/violet metallic ribbon M from official reference.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/stream-moviesanywhere.png",
+      "optimized": "Badges/v2/stream-moviesanywhere.png",
+      "styleReference": "Originals/references/movies-anywhere-official.png",
+      "referenceURL": "https://moviesanywhere.com/logo.png"
     }
   ],
   "dolbyHeader": {
