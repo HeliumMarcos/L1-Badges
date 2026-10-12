@@ -287,40 +287,40 @@
       "category": "audio",
       "main": "DOLBY",
       "subtitle": "ATMOS",
-      "palette": "Chrome Dolby icon/wordmark, golden ATMOS.",
+      "palette": "Reuse approved identical chrome double-D/DOLBY header; golden label layer below.",
       "status": "ready",
       "original": "Originals/metallic-v2/dolby_atmos.png",
-      "optimized": "Badges/v2/dolby_atmos.png"
+      "optimized": "Badges/v2/dolby-unified/dolby_atmos.png"
     },
     {
       "file": "dolby_digital_plus.png",
       "category": "audio",
       "main": "DOLBY",
       "subtitle": "DIGITAL PLUS",
-      "palette": "Chrome Dolby icon and DOLBY, golden DIGITAL PLUS. Preserve PLUS.",
+      "palette": "Reuse approved identical chrome double-D/DOLBY header; golden label layer below.",
       "status": "ready",
       "original": "Originals/metallic-v2/dolby_digital_plus.png",
-      "optimized": "Badges/v2/dolby_digital_plus.png"
+      "optimized": "Badges/v2/dolby-unified/dolby_digital_plus.png"
     },
     {
       "file": "dolby_digital.png",
       "category": "audio",
       "main": "DOLBY",
       "subtitle": "DIGITAL",
-      "palette": "Chrome Dolby double-D icon and DOLBY, gold DIGITAL.",
+      "palette": "Reuse approved identical chrome double-D/DOLBY header; golden label layer below.",
       "status": "ready",
       "original": "Originals/metallic-v2/dolby_digital.png",
-      "optimized": "Badges/v2/dolby_digital.png"
+      "optimized": "Badges/v2/dolby-unified/dolby_digital.png"
     },
     {
       "file": "dolby_vision.png",
       "category": "hdr",
       "main": "DOLBY",
       "subtitle": "VISION",
-      "palette": "Chrome Dolby icon and DOLBY, golden VISION.",
+      "palette": "Reuse approved identical chrome double-D/DOLBY header; golden label layer below.",
       "status": "ready",
       "original": "Originals/metallic-v2/dolby_vision.png",
-      "optimized": "Badges/v2/dolby_vision.png"
+      "optimized": "Badges/v2/dolby-unified/dolby_vision.png"
     },
     {
       "file": "dts_hd_high_resolution_audio.png",
@@ -665,42 +665,42 @@
     {
       "file": "vis-atmos-dv.png",
       "category": "combo",
-      "main": "DOLBY VISION",
-      "subtitle": "ATMOS",
-      "palette": "Preserve original double-D composite layout. Chrome VISION and golden ATMOS.",
-      "status": "pending",
+      "main": "DOLBY",
+      "subtitle": "VISION · ATMOS",
+      "palette": "Reuse approved identical chrome double-D/DOLBY header; golden label layer below.",
+      "status": "ready",
       "original": "Originals/metallic-v2/vis-atmos-dv.png",
-      "optimized": "Badges/v2/vis-atmos-dv.png"
+      "optimized": "Badges/v2/dolby-unified/vis-atmos-dv.png"
     },
     {
       "file": "vis-dd-dv.png",
       "category": "combo",
-      "main": "DOLBY VISION",
-      "subtitle": "DOLBY DIGITAL",
-      "palette": "Preserve original double-D composite layout, chrome top and golden lower text.",
-      "status": "pending",
+      "main": "DOLBY",
+      "subtitle": "VISION · DIGITAL",
+      "palette": "Reuse approved identical chrome double-D/DOLBY header; golden label layer below.",
+      "status": "ready",
       "original": "Originals/metallic-v2/vis-dd-dv.png",
-      "optimized": "Badges/v2/vis-dd-dv.png"
+      "optimized": "Badges/v2/dolby-unified/vis-dd-dv.png"
     },
     {
       "file": "vis-ddp-dv.png",
       "category": "combo",
-      "main": "DOLBY VISION",
-      "subtitle": "DIGITAL PLUS",
-      "palette": "Preserve original double-D composite layout. Chrome VISION, gold DIGITAL PLUS.",
-      "status": "pending",
+      "main": "DOLBY",
+      "subtitle": "VISION · DIGITAL PLUS",
+      "palette": "Reuse approved identical chrome double-D/DOLBY header; golden label layer below.",
+      "status": "ready",
       "original": "Originals/metallic-v2/vis-ddp-dv.png",
-      "optimized": "Badges/v2/vis-ddp-dv.png"
+      "optimized": "Badges/v2/dolby-unified/vis-ddp-dv.png"
     },
     {
       "file": "vis-truehd-dv.png",
       "category": "combo",
-      "main": "DOLBY VISION",
-      "subtitle": "TRUEHD",
-      "palette": "Preserve original double-D composite layout. Chrome VISION, golden TRUEHD.",
-      "status": "pending",
+      "main": "DOLBY",
+      "subtitle": "VISION · TRUEHD",
+      "palette": "Reuse approved identical chrome double-D/DOLBY header; golden label layer below.",
+      "status": "ready",
       "original": "Originals/metallic-v2/vis-truehd-dv.png",
-      "optimized": "Badges/v2/vis-truehd-dv.png"
+      "optimized": "Badges/v2/dolby-unified/vis-truehd-dv.png"
     },
     {
       "file": "vorbis.png",
@@ -752,5 +752,22 @@
       "original": "Originals/metallic-v2/WEBRip_transparent_4x.png",
       "optimized": "Badges/v2/WEBRip_transparent_4x.png"
     }
-  ]
+  ],
+  "dolbyHeader": {
+    "reference": "Originals/references/dolby-approved.png",
+    "header": "Originals/references/dolby-header.png",
+    "rawSHA256": "f7e546b7b6fb03cc82a8cd93f87789919e5aa8fc2c80b26b84bd99233e44c15e",
+    "width": 2048,
+    "height": 475,
+    "files": [
+      "dolby_digital.png",
+      "dolby_digital_plus.png",
+      "dolby_atmos.png",
+      "dolby_vision.png",
+      "vis-atmos-dv.png",
+      "vis-dd-dv.png",
+      "vis-ddp-dv.png",
+      "vis-truehd-dv.png"
+    ]
+  }
 }

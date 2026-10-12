@@ -73,7 +73,7 @@ class BadgesTest(unittest.TestCase):
         self.assertEqual(matched("PCM8ch", "audio-channels"), {"other-channel-count"})
         self.assertEqual(matched("PCM6ch", "audio-channels"), {"other-channel-count"})
 
-    def test_immersive_and_vision_combinations_keep_existing_images(self):
+    def test_immersive_and_vision_combinations_keep_existing_rules(self):
         self.assertEqual(matched("TrueHD7.1 Atmos", "audio-tech"), {"truehd", "dolby-atmos"})
         self.assertEqual(matched("DDP5.1 Atmos DV", "video-tech"), {"vis-ddp-dv", "vis-atmos-dv"})
         self.assertEqual(matched("TrueHD7.1 DV", "video-tech"), {"vis-truehd-dv"})
@@ -126,6 +126,25 @@ class BadgesTest(unittest.TestCase):
                 self.assertLessEqual(width, 960)
                 self.assertLessEqual(height, 240)
                 self.assertLess(optimized.stat().st_size, original.stat().st_size)
+
+    def test_dolby_family_uses_one_approved_header_and_new_cache_safe_urls(self):
+        plan = json.loads((ROOT / "design" / "metallic-v2.json").read_text(encoding="utf-8"))
+        header = plan["dolbyHeader"]
+        self.assertEqual(len(header["files"]), 8)
+        self.assertTrue((ROOT / header["reference"]).is_file())
+        self.assertTrue((ROOT / header["header"]).is_file())
+        self.assertRegex(header["rawSHA256"], r"^[0-9a-f]{64}$")
+        for filename in header["files"]:
+            asset = next(a for a in plan["assets"] if a["file"] == filename)
+            self.assertEqual(asset["status"], "ready")
+            self.assertEqual(asset["optimized"], "Badges/v2/dolby-unified/" + filename)
+            self.assertTrue((ROOT / "Originals" / "dolby-labels" / filename).is_file())
+            original = (ROOT / asset["original"]).read_bytes()
+            optimized = (ROOT / asset["optimized"]).read_bytes()
+            self.assertEqual(struct.unpack(">II", original[16:24]), (2048, 768))
+            self.assertEqual(struct.unpack(">II", optimized[16:24]), (640, 240))
+            entry = next(f for f in DATA["filters"] if f["imageURL"].rsplit("/", 1)[-1] == filename)
+            self.assertIn("/dolby-unified/", entry["imageURL"])
 
 
 if __name__ == "__main__":

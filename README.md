@@ -23,6 +23,18 @@ O progresso e o brief de cada uma das 75 imagens estão em
 `design/metallic-v2.json`. Prata/cromo e dourado seguem o DTS-HD aprovado;
 cores oficiais são preservadas em marcas como TrueHD e nas plataformas.
 As artes são geradas pela ferramenta de imagens integrada, uma por badge.
+Na família Dolby, o usuário autorizou reutilizar o cabeçalho aprovado por
+processamento local: símbolo duplo-D e palavra DOLBY são idênticos nos oito
+badges, mudando somente o texto dourado. O original aprovado e as camadas
+ficam em `Originals/references/` e `Originals/dolby-labels/`; as versões
+anteriores estão preservadas em `Originals/variants/`.
+
+As imagens Dolby padronizadas usam `Badges/v2/dolby-unified/`, uma URL nova
+para evitar aproveitar imagens anteriores em cache. Com `sharp` disponível,
+`node scripts/validate-dolby.cjs` compara os pixels dos cabeçalhos nos
+oito originais e nas oito versões otimizadas. Para remontar usando as
+camadas salvas: `node scripts/compose-dolby.cjs --rebuild`, seguido de
+`node scripts/optimize-metallic.cjs` com os oito nomes da família.
 
 ## Ampliação de 12/10/2026
 
