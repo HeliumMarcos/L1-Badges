@@ -117,10 +117,11 @@
       "category": "resolution",
       "main": "4K",
       "subtitle": "ULTRA HD",
-      "palette": "Chrome 4 with golden K, chrome subtitle.",
+      "palette": "Matched sibling of the approved 8K artwork: silver 4, identical golden K, silver ULTRA HD below, no frame.",
       "status": "ready",
       "original": "Originals/metallic-v2/4k_ultra_hd.png",
-      "optimized": "Badges/v2/4k_ultra_hd.png"
+      "optimized": "Badges/v2/4k-matched/4k_ultra_hd.png",
+      "styleReference": "Originals/metallic-v2/8k_ultra_hd.png"
     },
     {
       "file": "5_0_audio.png",
@@ -606,10 +607,10 @@
     {
       "file": "stream-max.png",
       "category": "platform",
-      "main": "max",
+      "main": "HBO max",
       "subtitle": "",
-      "palette": "Preserve original Max brand wordmark and official blue hues as glossy metal.",
-      "status": "pending",
+      "palette": "Preserve the original HBO symbol and max wordmark, polished blue/chrome metal. Keep both HBO and max, not just max.",
+      "status": "ready",
       "original": "Originals/metallic-v2/stream-max.png",
       "optimized": "Badges/v2/stream-max.png"
     },
@@ -619,7 +620,7 @@
       "main": "NETFLIX",
       "subtitle": "",
       "palette": "Keep official Netflix red, polished red metallic surfaces and dark beveled edges.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/stream-netflix.png",
       "optimized": "Badges/v2/stream-netflix.png"
     },
@@ -629,7 +630,7 @@
       "main": "Paramount+",
       "subtitle": "",
       "palette": "Preserve mountain/star mark and official Paramount blue, polished metallic blue/chrome.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/stream-paramount.png",
       "optimized": "Badges/v2/stream-paramount.png"
     },
@@ -639,7 +640,7 @@
       "main": "peacock",
       "subtitle": "",
       "palette": "Preserve peacock wordmark with multicolored dots, metallic silver lettering and faithful colored dots.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/stream-peacock.png",
       "optimized": "Badges/v2/stream-peacock.png"
     },
@@ -649,7 +650,7 @@
       "main": "prime video",
       "subtitle": "",
       "palette": "Preserve official Amazon Prime Video blue, smile/arrow and wordmark; glossy blue metal and silver edging.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/stream-prime.png",
       "optimized": "Badges/v2/stream-prime.png"
     },
