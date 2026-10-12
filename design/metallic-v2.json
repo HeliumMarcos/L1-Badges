@@ -1,0 +1,756 @@
+{
+  "version": 2,
+  "style": "Approved DTS-HD metallic chrome/gold reference; official platform colors retained.",
+  "assets": [
+    {
+      "file": "1_0_audio.png",
+      "category": "channels",
+      "main": "1.0",
+      "subtitle": "",
+      "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/1_0_audio.png",
+      "optimized": "Badges/v2/1_0_audio.png"
+    },
+    {
+      "file": "1080i_full_hd.png",
+      "category": "resolution",
+      "main": "1080i",
+      "subtitle": "INTERLACED HD",
+      "palette": "Chrome main text, gold subtitle. Lowercase i, never p.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/1080i_full_hd.png",
+      "optimized": "Badges/v2/1080i_full_hd.png"
+    },
+    {
+      "file": "1080p_full_hd.png",
+      "category": "resolution",
+      "main": "1080p",
+      "subtitle": "FULL HD",
+      "palette": "Chrome main text, gold subtitle. Lowercase p.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/1080p_full_hd.png",
+      "optimized": "Badges/v2/1080p_full_hd.png"
+    },
+    {
+      "file": "10Bit_transparent_4x.png",
+      "category": "video",
+      "main": "10",
+      "subtitle": "BIT",
+      "palette": "Golden 10, chrome BIT.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/10Bit_transparent_4x.png",
+      "optimized": "Badges/v2/10Bit_transparent_4x.png"
+    },
+    {
+      "file": "10ch_audio.png",
+      "category": "channels",
+      "main": "10 CH",
+      "subtitle": "",
+      "palette": "Chrome 10, golden speaker/CH. No decimal layout or Atmos.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/10ch_audio.png",
+      "optimized": "Badges/v2/10ch_audio.png"
+    },
+    {
+      "file": "2_0_audio.png",
+      "category": "channels",
+      "main": "2.0",
+      "subtitle": "",
+      "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/2_0_audio.png",
+      "optimized": "Badges/v2/2_0_audio.png"
+    },
+    {
+      "file": "2_1_audio.png",
+      "category": "channels",
+      "main": "2.1",
+      "subtitle": "",
+      "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/2_1_audio.png",
+      "optimized": "Badges/v2/2_1_audio.png"
+    },
+    {
+      "file": "3_0_audio.png",
+      "category": "channels",
+      "main": "3.0",
+      "subtitle": "",
+      "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/3_0_audio.png",
+      "optimized": "Badges/v2/3_0_audio.png"
+    },
+    {
+      "file": "4_0_audio.png",
+      "category": "channels",
+      "main": "4.0",
+      "subtitle": "",
+      "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/4_0_audio.png",
+      "optimized": "Badges/v2/4_0_audio.png"
+    },
+    {
+      "file": "4_1_audio.png",
+      "category": "channels",
+      "main": "4.1",
+      "subtitle": "",
+      "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/4_1_audio.png",
+      "optimized": "Badges/v2/4_1_audio.png"
+    },
+    {
+      "file": "480p_sd.png",
+      "category": "resolution",
+      "main": "480p",
+      "subtitle": "SD",
+      "palette": "Chrome main text, gold subtitle. Lowercase p.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/480p_sd.png",
+      "optimized": "Badges/v2/480p_sd.png"
+    },
+    {
+      "file": "4k_ultra_hd.png",
+      "category": "resolution",
+      "main": "4K",
+      "subtitle": "ULTRA HD",
+      "palette": "Chrome 4 with golden K, chrome subtitle.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/4k_ultra_hd.png",
+      "optimized": "Badges/v2/4k_ultra_hd.png"
+    },
+    {
+      "file": "5_0_audio.png",
+      "category": "channels",
+      "main": "5.0",
+      "subtitle": "",
+      "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/5_0_audio.png",
+      "optimized": "Badges/v2/5_0_audio.png"
+    },
+    {
+      "file": "5_1_2_audio.png",
+      "category": "channels",
+      "main": "5.1.2",
+      "subtitle": "",
+      "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/5_1_2_audio.png",
+      "optimized": "Badges/v2/5_1_2_audio.png"
+    },
+    {
+      "file": "5_1_audio.png",
+      "category": "channels",
+      "main": "5.1",
+      "subtitle": "",
+      "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/5_1_audio.png",
+      "optimized": "Badges/v2/5_1_audio.png"
+    },
+    {
+      "file": "576p_sd.png",
+      "category": "resolution",
+      "main": "576p",
+      "subtitle": "SD",
+      "palette": "Chrome main text, gold subtitle. Lowercase p.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/576p_sd.png",
+      "optimized": "Badges/v2/576p_sd.png"
+    },
+    {
+      "file": "6_0_audio.png",
+      "category": "channels",
+      "main": "6.0",
+      "subtitle": "",
+      "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/6_0_audio.png",
+      "optimized": "Badges/v2/6_0_audio.png"
+    },
+    {
+      "file": "6_1_audio.png",
+      "category": "channels",
+      "main": "6.1",
+      "subtitle": "",
+      "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/6_1_audio.png",
+      "optimized": "Badges/v2/6_1_audio.png"
+    },
+    {
+      "file": "7_1_4_audio.png",
+      "category": "channels",
+      "main": "7.1.4",
+      "subtitle": "",
+      "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/7_1_4_audio.png",
+      "optimized": "Badges/v2/7_1_4_audio.png"
+    },
+    {
+      "file": "7_1_audio.png",
+      "category": "channels",
+      "main": "7.1",
+      "subtitle": "",
+      "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/7_1_audio.png",
+      "optimized": "Badges/v2/7_1_audio.png"
+    },
+    {
+      "file": "720p_hd.png",
+      "category": "resolution",
+      "main": "720p",
+      "subtitle": "HD",
+      "palette": "Chrome main text, gold subtitle. Lowercase p.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/720p_hd.png",
+      "optimized": "Badges/v2/720p_hd.png"
+    },
+    {
+      "file": "8Bit_transparent_4x.png",
+      "category": "video",
+      "main": "8",
+      "subtitle": "BIT",
+      "palette": "Golden 8, chrome BIT.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/8Bit_transparent_4x.png",
+      "optimized": "Badges/v2/8Bit_transparent_4x.png"
+    },
+    {
+      "file": "8k_ultra_hd.png",
+      "category": "resolution",
+      "main": "8K",
+      "subtitle": "ULTRA HD",
+      "palette": "Chrome 8 with golden K, chrome subtitle.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/8k_ultra_hd.png",
+      "optimized": "Badges/v2/8k_ultra_hd.png"
+    },
+    {
+      "file": "AAC.png",
+      "category": "audio",
+      "main": "AAC",
+      "subtitle": "",
+      "palette": "Chrome/silver with subtle golden edge.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/AAC.png",
+      "optimized": "Badges/v2/AAC.png"
+    },
+    {
+      "file": "AV1.png",
+      "category": "video",
+      "main": "AV1",
+      "subtitle": "",
+      "palette": "Chrome AV and golden 1; preserve AV1 symbol.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/AV1.png",
+      "optimized": "Badges/v2/AV1.png"
+    },
+    {
+      "file": "AVC_transparent_4x.png",
+      "category": "video",
+      "main": "AVC",
+      "subtitle": "H.264",
+      "palette": "Chrome AVC, gold subtitle.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/AVC_transparent_4x.png",
+      "optimized": "Badges/v2/AVC_transparent_4x.png"
+    },
+    {
+      "file": "blu_ray_disc.png",
+      "category": "source",
+      "main": "Blu-ray",
+      "subtitle": "DISC",
+      "palette": "Chrome Blu-ray logo/lettering with warm golden accents.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/blu_ray_disc.png",
+      "optimized": "Badges/v2/blu_ray_disc.png"
+    },
+    {
+      "file": "channels_audio.png",
+      "category": "channels",
+      "main": "CH",
+      "subtitle": "",
+      "palette": "Silver speaker, golden CH. No made-up count.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/channels_audio.png",
+      "optimized": "Badges/v2/channels_audio.png"
+    },
+    {
+      "file": "dolby_atmos.png",
+      "category": "audio",
+      "main": "DOLBY",
+      "subtitle": "ATMOS",
+      "palette": "Chrome Dolby icon/wordmark, golden ATMOS.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/dolby_atmos.png",
+      "optimized": "Badges/v2/dolby_atmos.png"
+    },
+    {
+      "file": "dolby_digital_plus.png",
+      "category": "audio",
+      "main": "DOLBY",
+      "subtitle": "DIGITAL PLUS",
+      "palette": "Chrome Dolby icon and DOLBY, golden DIGITAL PLUS. Preserve PLUS.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/dolby_digital_plus.png",
+      "optimized": "Badges/v2/dolby_digital_plus.png"
+    },
+    {
+      "file": "dolby_digital.png",
+      "category": "audio",
+      "main": "DOLBY",
+      "subtitle": "DIGITAL",
+      "palette": "Chrome Dolby double-D icon and DOLBY, gold DIGITAL.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/dolby_digital.png",
+      "optimized": "Badges/v2/dolby_digital.png"
+    },
+    {
+      "file": "dolby_vision.png",
+      "category": "hdr",
+      "main": "DOLBY",
+      "subtitle": "VISION",
+      "palette": "Chrome Dolby icon and DOLBY, golden VISION.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/dolby_vision.png",
+      "optimized": "Badges/v2/dolby_vision.png"
+    },
+    {
+      "file": "dts_hd_high_resolution_audio.png",
+      "category": "audio",
+      "main": "dts-HD",
+      "subtitle": "HIGH RESOLUTION AUDIO",
+      "palette": "Approved silver/chrome dts with gold HD; reuse approved artwork.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/dts_hd_high_resolution_audio.png",
+      "optimized": "Badges/v2/dts_hd_high_resolution_audio.png"
+    },
+    {
+      "file": "dts_hd_master_audio.png",
+      "category": "audio",
+      "main": "dts-HD",
+      "subtitle": "MASTER AUDIO",
+      "palette": "Silver/chrome dts and secondary text, gold HD.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/dts_hd_master_audio.png",
+      "optimized": "Badges/v2/dts_hd_master_audio.png"
+    },
+    {
+      "file": "dts_hd.png",
+      "category": "audio",
+      "main": "dts-HD",
+      "subtitle": "",
+      "palette": "Silver/chrome dts, gold HD.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/dts_hd.png",
+      "optimized": "Badges/v2/dts_hd.png"
+    },
+    {
+      "file": "dts_x.png",
+      "category": "audio",
+      "main": "dts:X",
+      "subtitle": "",
+      "palette": "Silver/chrome dts, golden X. Preserve the official X silhouette.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/dts_x.png",
+      "optimized": "Badges/v2/dts_x.png"
+    },
+    {
+      "file": "dts.png",
+      "category": "audio",
+      "main": "dts",
+      "subtitle": "",
+      "palette": "Silver/chrome with restrained gold edging.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/dts.png",
+      "optimized": "Badges/v2/dts.png"
+    },
+    {
+      "file": "DVD_RIP_transparent_4x.png",
+      "category": "source",
+      "main": "DVD",
+      "subtitle": "RIP",
+      "palette": "Chrome DVD mark, golden RIP.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/DVD_RIP_transparent_4x.png",
+      "optimized": "Badges/v2/DVD_RIP_transparent_4x.png"
+    },
+    {
+      "file": "dvd.png",
+      "category": "source",
+      "main": "DVD",
+      "subtitle": "",
+      "palette": "Chrome DVD logo with golden accent.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/dvd.png",
+      "optimized": "Badges/v2/dvd.png"
+    },
+    {
+      "file": "flac.png",
+      "category": "audio",
+      "main": "FLAC",
+      "subtitle": "",
+      "palette": "Chrome/silver with restrained golden accents.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/flac.png",
+      "optimized": "Badges/v2/flac.png"
+    },
+    {
+      "file": "hdr.png",
+      "category": "hdr",
+      "main": "HDR",
+      "subtitle": "",
+      "palette": "Chrome/silver HDR, restrained gold highlights.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/hdr.png",
+      "optimized": "Badges/v2/hdr.png"
+    },
+    {
+      "file": "hdr10_plus.png",
+      "category": "hdr",
+      "main": "HDR10+",
+      "subtitle": "",
+      "palette": "Chrome HDR, golden 10+. Preserve the plus sign.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/hdr10_plus.png",
+      "optimized": "Badges/v2/hdr10_plus.png"
+    },
+    {
+      "file": "hdr10.png",
+      "category": "hdr",
+      "main": "HDR10",
+      "subtitle": "",
+      "palette": "Chrome HDR, golden 10.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/hdr10.png",
+      "optimized": "Badges/v2/hdr10.png"
+    },
+    {
+      "file": "HDTV_transparent_4x.png",
+      "category": "source",
+      "main": "HDTV",
+      "subtitle": "",
+      "palette": "Chrome HD, golden TV.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/HDTV_transparent_4x.png",
+      "optimized": "Badges/v2/HDTV_transparent_4x.png"
+    },
+    {
+      "file": "HEVC_transparent_4x.png",
+      "category": "video",
+      "main": "HEVC",
+      "subtitle": "H.265",
+      "palette": "Chrome HEVC, gold subtitle.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/HEVC_transparent_4x.png",
+      "optimized": "Badges/v2/HEVC_transparent_4x.png"
+    },
+    {
+      "file": "hlg.png",
+      "category": "hdr",
+      "main": "HLG",
+      "subtitle": "",
+      "palette": "Chrome HLG with gold highlights.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/hlg.png",
+      "optimized": "Badges/v2/hlg.png"
+    },
+    {
+      "file": "imax_enhanced.png",
+      "category": "hdr",
+      "main": "IMAX",
+      "subtitle": "ENHANCED",
+      "palette": "IMAX blue glossy metal, silver/chrome ENHANCED, controlled gold accent.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/imax_enhanced.png",
+      "optimized": "Badges/v2/imax_enhanced.png"
+    },
+    {
+      "file": "imax.png",
+      "category": "hdr",
+      "main": "IMAX",
+      "subtitle": "",
+      "palette": "Keep official blue IMAX hue rendered as glossy blue metal with silver edges.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/imax.png",
+      "optimized": "Badges/v2/imax.png"
+    },
+    {
+      "file": "mp3.png",
+      "category": "audio",
+      "main": "MP3",
+      "subtitle": "",
+      "palette": "Chrome/silver with golden 3.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/mp3.png",
+      "optimized": "Badges/v2/mp3.png"
+    },
+    {
+      "file": "mpeg_2.png",
+      "category": "video",
+      "main": "MPEG-2",
+      "subtitle": "",
+      "palette": "Chrome MPEG, golden 2.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/mpeg_2.png",
+      "optimized": "Badges/v2/mpeg_2.png"
+    },
+    {
+      "file": "opus.png",
+      "category": "audio",
+      "main": "OPUS",
+      "subtitle": "",
+      "palette": "Chrome/silver with restrained golden accents.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/opus.png",
+      "optimized": "Badges/v2/opus.png"
+    },
+    {
+      "file": "pcm.png",
+      "category": "audio",
+      "main": "PCM",
+      "subtitle": "",
+      "palette": "Chrome/silver with restrained golden accents.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/pcm.png",
+      "optimized": "Badges/v2/pcm.png"
+    },
+    {
+      "file": "pt.png",
+      "category": "language",
+      "main": "PT-BR",
+      "subtitle": "",
+      "palette": "Chrome PT and golden BR. Preserve Brazilian language meaning.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/pt.png",
+      "optimized": "Badges/v2/pt.png"
+    },
+    {
+      "file": "remux.png",
+      "category": "source",
+      "main": "REMUX",
+      "subtitle": "",
+      "palette": "Golden metallic REMUX with a silver beveled edge.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/remux.png",
+      "optimized": "Badges/v2/remux.png"
+    },
+    {
+      "file": "SDR_transparent_4x.png",
+      "category": "hdr",
+      "main": "SDR",
+      "subtitle": "",
+      "palette": "Chrome/silver letters with a subtle golden outline.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/SDR_transparent_4x.png",
+      "optimized": "Badges/v2/SDR_transparent_4x.png"
+    },
+    {
+      "file": "stream-appletv.png",
+      "category": "platform",
+      "main": "tv+",
+      "subtitle": "",
+      "palette": "Preserve original Apple symbol with tv+, chrome/silver finish, no invented word Apple.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/stream-appletv.png",
+      "optimized": "Badges/v2/stream-appletv.png"
+    },
+    {
+      "file": "stream-crunchyroll.png",
+      "category": "platform",
+      "main": "crunchyroll",
+      "subtitle": "",
+      "palette": "Preserve original eye/swirl symbol and official orange as orange polished metal.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/stream-crunchyroll.png",
+      "optimized": "Badges/v2/stream-crunchyroll.png"
+    },
+    {
+      "file": "stream-disney.png",
+      "category": "platform",
+      "main": "Disney+",
+      "subtitle": "",
+      "palette": "Preserve official Disney lettering and arc/plus, glossy blue/silver finishes.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/stream-disney.png",
+      "optimized": "Badges/v2/stream-disney.png"
+    },
+    {
+      "file": "stream-hulu.png",
+      "category": "platform",
+      "main": "hulu",
+      "subtitle": "",
+      "palette": "Preserve official Hulu green, glossy metallic green and dark edges.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/stream-hulu.png",
+      "optimized": "Badges/v2/stream-hulu.png"
+    },
+    {
+      "file": "stream-itunes.png",
+      "category": "platform",
+      "main": "iTunes",
+      "subtitle": "",
+      "palette": "Preserve original colorful Apple/iTunes musical symbol; polished metal colors with chrome lettering.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/stream-itunes.png",
+      "optimized": "Badges/v2/stream-itunes.png"
+    },
+    {
+      "file": "stream-max.png",
+      "category": "platform",
+      "main": "max",
+      "subtitle": "",
+      "palette": "Preserve original Max brand wordmark and official blue hues as glossy metal.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/stream-max.png",
+      "optimized": "Badges/v2/stream-max.png"
+    },
+    {
+      "file": "stream-netflix.png",
+      "category": "platform",
+      "main": "NETFLIX",
+      "subtitle": "",
+      "palette": "Keep official Netflix red, polished red metallic surfaces and dark beveled edges.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/stream-netflix.png",
+      "optimized": "Badges/v2/stream-netflix.png"
+    },
+    {
+      "file": "stream-paramount.png",
+      "category": "platform",
+      "main": "Paramount+",
+      "subtitle": "",
+      "palette": "Preserve mountain/star mark and official Paramount blue, polished metallic blue/chrome.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/stream-paramount.png",
+      "optimized": "Badges/v2/stream-paramount.png"
+    },
+    {
+      "file": "stream-peacock.png",
+      "category": "platform",
+      "main": "peacock",
+      "subtitle": "",
+      "palette": "Preserve peacock wordmark with multicolored dots, metallic silver lettering and faithful colored dots.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/stream-peacock.png",
+      "optimized": "Badges/v2/stream-peacock.png"
+    },
+    {
+      "file": "stream-prime.png",
+      "category": "platform",
+      "main": "prime video",
+      "subtitle": "",
+      "palette": "Preserve official Amazon Prime Video blue, smile/arrow and wordmark; glossy blue metal and silver edging.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/stream-prime.png",
+      "optimized": "Badges/v2/stream-prime.png"
+    },
+    {
+      "file": "truehd.png",
+      "category": "audio",
+      "main": "TRUEHD",
+      "subtitle": "",
+      "palette": "Preserve original TRUEHD wordmark and boxed HD contour. TRUE in official blue polished metal, HD in silver/chrome, subtle gold bevel accents.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/truehd.png",
+      "optimized": "Badges/v2/truehd.png"
+    },
+    {
+      "file": "vis-atmos-dv.png",
+      "category": "combo",
+      "main": "DOLBY VISION",
+      "subtitle": "ATMOS",
+      "palette": "Preserve original double-D composite layout. Chrome VISION and golden ATMOS.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/vis-atmos-dv.png",
+      "optimized": "Badges/v2/vis-atmos-dv.png"
+    },
+    {
+      "file": "vis-dd-dv.png",
+      "category": "combo",
+      "main": "DOLBY VISION",
+      "subtitle": "DOLBY DIGITAL",
+      "palette": "Preserve original double-D composite layout, chrome top and golden lower text.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/vis-dd-dv.png",
+      "optimized": "Badges/v2/vis-dd-dv.png"
+    },
+    {
+      "file": "vis-ddp-dv.png",
+      "category": "combo",
+      "main": "DOLBY VISION",
+      "subtitle": "DIGITAL PLUS",
+      "palette": "Preserve original double-D composite layout. Chrome VISION, gold DIGITAL PLUS.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/vis-ddp-dv.png",
+      "optimized": "Badges/v2/vis-ddp-dv.png"
+    },
+    {
+      "file": "vis-truehd-dv.png",
+      "category": "combo",
+      "main": "DOLBY VISION",
+      "subtitle": "TRUEHD",
+      "palette": "Preserve original double-D composite layout. Chrome VISION, golden TRUEHD.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/vis-truehd-dv.png",
+      "optimized": "Badges/v2/vis-truehd-dv.png"
+    },
+    {
+      "file": "vorbis.png",
+      "category": "audio",
+      "main": "VORBIS",
+      "subtitle": "",
+      "palette": "Chrome/silver with restrained gold.",
+      "status": "ready",
+      "original": "Originals/metallic-v2/vorbis.png",
+      "optimized": "Badges/v2/vorbis.png"
+    },
+    {
+      "file": "vp9.png",
+      "category": "video",
+      "main": "VP9",
+      "subtitle": "",
+      "palette": "Chrome VP, golden 9.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/vp9.png",
+      "optimized": "Badges/v2/vp9.png"
+    },
+    {
+      "file": "vvc.png",
+      "category": "video",
+      "main": "VVC",
+      "subtitle": "H.266",
+      "palette": "Chrome VVC, gold subtitle.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/vvc.png",
+      "optimized": "Badges/v2/vvc.png"
+    },
+    {
+      "file": "WEBDL_transparent_4x.png",
+      "category": "source",
+      "main": "WEB-DL",
+      "subtitle": "",
+      "palette": "Chrome WEB, golden DL.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/WEBDL_transparent_4x.png",
+      "optimized": "Badges/v2/WEBDL_transparent_4x.png"
+    },
+    {
+      "file": "WEBRip_transparent_4x.png",
+      "category": "source",
+      "main": "WEBRip",
+      "subtitle": "",
+      "palette": "Chrome WEB, golden Rip.",
+      "status": "pending",
+      "original": "Originals/metallic-v2/WEBRip_transparent_4x.png",
+      "optimized": "Badges/v2/WEBRip_transparent_4x.png"
+    }
+  ]
+}

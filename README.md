@@ -9,6 +9,21 @@ badges. Uma importação já salva pode manter a versão anterior até ser atual
 Não importe ao mesmo tempo outra lista equivalente para evitar badges repetidos.
 Os nomes dos menus variam conforme a versão do aplicativo.
 
+## Coleção metálica — publicação por famílias
+
+A URL principal passa a usar as novas imagens em `Badges/v2/` à medida que
+cada família é concluída e revisada. Somente as URLs das imagens mudam;
+IDs, expressões e grupos são preservados. As imagens anteriores continuam
+no repositório e a lista anterior está em `badges-legacy.json`.
+
+Os PNGs para TV mantêm transparência, têm até 960×240 pixels e são
+redimensionados/compactados localmente com autorização do usuário.
+As imagens grandes selecionadas ficam em `Originals/metallic-v2/`.
+O progresso e o brief de cada uma das 75 imagens estão em
+`design/metallic-v2.json`. Prata/cromo e dourado seguem o DTS-HD aprovado;
+cores oficiais são preservadas em marcas como TrueHD e nas plataformas.
+As artes são geradas pela ferramenta de imagens integrada, uma por badge.
+
 ## Ampliação de 12/10/2026
 
 - DTS-HD HR separado de DTS-HD MA e da família DTS-HD.

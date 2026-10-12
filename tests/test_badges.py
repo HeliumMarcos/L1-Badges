@@ -100,6 +100,33 @@ class BadgesTest(unittest.TestCase):
                 content = (ROOT / "Badges" / name).read_bytes()
                 self.assertEqual(content[25], 6, "PNG must be RGBA for the dark TV interface")
 
+    def test_metallic_publication_preserves_all_matching_rules(self):
+        legacy = json.loads((ROOT / "badges-legacy.json").read_text(encoding="utf-8"))
+        self.assertEqual(DATA["groups"], legacy["groups"])
+        self.assertEqual(len(DATA["filters"]), len(legacy["filters"]))
+        for current, previous in zip(DATA["filters"], legacy["filters"]):
+            self.assertEqual({key: value for key, value in current.items() if key != "imageURL"},
+                             {key: value for key, value in previous.items() if key != "imageURL"})
+
+    def test_only_ready_metallic_images_are_activated_and_originals_preserved(self):
+        plan = json.loads((ROOT / "design" / "metallic-v2.json").read_text(encoding="utf-8"))
+        by_file = {asset["file"]: asset for asset in plan["assets"]}
+        self.assertEqual(len(by_file), 75)
+        for entry in DATA["filters"]:
+            if "/Badges/v2/" not in entry["imageURL"]:
+                continue
+            asset = by_file[entry["imageURL"].rsplit("/", 1)[-1]]
+            with self.subTest(file=asset["file"]):
+                self.assertEqual(asset["status"], "ready")
+                original, optimized = ROOT / asset["original"], ROOT / asset["optimized"]
+                self.assertTrue(original.is_file() and optimized.is_file())
+                content = optimized.read_bytes()
+                self.assertEqual(content[25], 6)
+                width, height = struct.unpack(">II", content[16:24])
+                self.assertLessEqual(width, 960)
+                self.assertLessEqual(height, 240)
+                self.assertLess(optimized.stat().st_size, original.stat().st_size)
+
 
 if __name__ == "__main__":
     unittest.main()
