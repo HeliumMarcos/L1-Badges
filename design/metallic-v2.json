@@ -406,9 +406,9 @@
       "file": "hdr.png",
       "category": "hdr",
       "main": "HDR",
-      "subtitle": "",
+      "subtitle": "HIGH DYNAMIC RANGE",
       "palette": "Chrome/silver HDR, restrained gold highlights.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/hdr.png",
       "optimized": "Badges/v2/hdr.png"
     },
@@ -418,7 +418,7 @@
       "main": "HDR10+",
       "subtitle": "",
       "palette": "Chrome HDR, golden 10+. Preserve the plus sign.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/hdr10_plus.png",
       "optimized": "Badges/v2/hdr10_plus.png"
     },
@@ -428,7 +428,7 @@
       "main": "HDR10",
       "subtitle": "",
       "palette": "Chrome HDR, golden 10.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/hdr10.png",
       "optimized": "Badges/v2/hdr10.png"
     },
@@ -456,9 +456,9 @@
       "file": "hlg.png",
       "category": "hdr",
       "main": "HLG",
-      "subtitle": "",
+      "subtitle": "HYBRID LOG-GAMMA",
       "palette": "Chrome HLG with gold highlights.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/hlg.png",
       "optimized": "Badges/v2/hlg.png"
     },
@@ -468,7 +468,7 @@
       "main": "IMAX",
       "subtitle": "ENHANCED",
       "palette": "IMAX blue glossy metal, silver/chrome ENHANCED, controlled gold accent.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/imax_enhanced.png",
       "optimized": "Badges/v2/imax_enhanced.png"
     },
@@ -478,7 +478,7 @@
       "main": "IMAX",
       "subtitle": "",
       "palette": "Keep official blue IMAX hue rendered as glossy blue metal with silver edges.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/imax.png",
       "optimized": "Badges/v2/imax.png"
     },
@@ -525,10 +525,10 @@
     {
       "file": "pt.png",
       "category": "language",
-      "main": "PT-BR",
+      "main": "POR",
       "subtitle": "",
-      "palette": "Chrome PT and golden BR. Preserve Brazilian language meaning.",
-      "status": "pending",
+      "palette": "Chrome POR with restrained golden bevel. Preserve Portuguese language meaning without adding a Brazilian country claim or flag.",
+      "status": "ready",
       "original": "Originals/metallic-v2/pt.png",
       "optimized": "Badges/v2/pt.png"
     },
@@ -546,9 +546,9 @@
       "file": "SDR_transparent_4x.png",
       "category": "hdr",
       "main": "SDR",
-      "subtitle": "",
+      "subtitle": "STANDARD DYNAMIC RANGE",
       "palette": "Chrome/silver letters with a subtle golden outline.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/SDR_transparent_4x.png",
       "optimized": "Badges/v2/SDR_transparent_4x.png"
     },
