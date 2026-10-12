@@ -8,7 +8,7 @@
       "main": "1.0",
       "subtitle": "",
       "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/1_0_audio.png",
       "optimized": "Badges/v2/1_0_audio.png"
     },
@@ -48,7 +48,7 @@
       "main": "10 CH",
       "subtitle": "",
       "palette": "Chrome 10, golden speaker/CH. No decimal layout or Atmos.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/10ch_audio.png",
       "optimized": "Badges/v2/10ch_audio.png"
     },
@@ -58,7 +58,7 @@
       "main": "2.0",
       "subtitle": "",
       "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/2_0_audio.png",
       "optimized": "Badges/v2/2_0_audio.png"
     },
@@ -68,7 +68,7 @@
       "main": "2.1",
       "subtitle": "",
       "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/2_1_audio.png",
       "optimized": "Badges/v2/2_1_audio.png"
     },
@@ -78,7 +78,7 @@
       "main": "3.0",
       "subtitle": "",
       "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/3_0_audio.png",
       "optimized": "Badges/v2/3_0_audio.png"
     },
@@ -88,7 +88,7 @@
       "main": "4.0",
       "subtitle": "",
       "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/4_0_audio.png",
       "optimized": "Badges/v2/4_0_audio.png"
     },
@@ -98,7 +98,7 @@
       "main": "4.1",
       "subtitle": "",
       "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/4_1_audio.png",
       "optimized": "Badges/v2/4_1_audio.png"
     },
@@ -129,7 +129,7 @@
       "main": "5.0",
       "subtitle": "",
       "palette": "Chrome/silver numeric layout, golden speaker icon. Exact digits and periods; no Atmos or DTS:X claim.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/5_0_audio.png",
       "optimized": "Badges/v2/5_0_audio.png"
     },
