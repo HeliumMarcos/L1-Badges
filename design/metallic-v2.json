@@ -268,7 +268,7 @@
       "main": "Blu-ray",
       "subtitle": "DISC",
       "palette": "Chrome Blu-ray logo/lettering with warm golden accents.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/blu_ray_disc.png",
       "optimized": "Badges/v2/blu_ray_disc.png"
     },
@@ -378,7 +378,7 @@
       "main": "DVD",
       "subtitle": "RIP",
       "palette": "Chrome DVD mark, golden RIP.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/DVD_RIP_transparent_4x.png",
       "optimized": "Badges/v2/DVD_RIP_transparent_4x.png"
     },
@@ -388,7 +388,7 @@
       "main": "DVD",
       "subtitle": "",
       "palette": "Chrome DVD logo with golden accent.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/dvd.png",
       "optimized": "Badges/v2/dvd.png"
     },
@@ -438,7 +438,7 @@
       "main": "HDTV",
       "subtitle": "",
       "palette": "Chrome HD, golden TV.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/HDTV_transparent_4x.png",
       "optimized": "Badges/v2/HDTV_transparent_4x.png"
     },
@@ -538,7 +538,7 @@
       "main": "REMUX",
       "subtitle": "",
       "palette": "Golden metallic REMUX with a silver beveled edge.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/remux.png",
       "optimized": "Badges/v2/remux.png"
     },
@@ -738,7 +738,7 @@
       "main": "WEB-DL",
       "subtitle": "",
       "palette": "Chrome WEB, golden DL.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/WEBDL_transparent_4x.png",
       "optimized": "Badges/v2/WEBDL_transparent_4x.png"
     },
@@ -748,7 +748,7 @@
       "main": "WEBRip",
       "subtitle": "",
       "palette": "Chrome WEB, golden Rip.",
-      "status": "pending",
+      "status": "ready",
       "original": "Originals/metallic-v2/WEBRip_transparent_4x.png",
       "optimized": "Badges/v2/WEBRip_transparent_4x.png"
     }
