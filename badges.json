@@ -551,7 +551,7 @@
       "groupId": "streaming",
       "name": "Disney+",
       "pattern": "(?i)\\bdsnp\\b",
-      "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/stream-disney.png",
+      "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/v2/stream-disney.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",

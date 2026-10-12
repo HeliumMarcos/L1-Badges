@@ -22,7 +22,12 @@ As imagens grandes selecionadas ficam em `Originals/metallic-v2/`.
 O progresso e o brief de cada uma das 76 imagens estão em
 `design/metallic-v2.json`. Prata/cromo e dourado seguem o DTS-HD aprovado;
 cores oficiais são preservadas em marcas como TrueHD e nas plataformas.
-As artes são geradas pela ferramenta de imagens integrada, uma por badge.
+As artes metálicas são geradas pela ferramenta de imagens integrada, uma por badge.
+Disney+ usa diretamente o PNG aprovado e enviado pelo usuário: letras brancas
+e arco azul/turquesa, sem recriar ou alterar o desenho. O original é preservado
+sem mudanças; somente a versão para TV tem as margens transparentes removidas
+antes do redimensionamento e da compactação. Essa otimização é reproduzível com
+`node scripts/optimize-metallic.cjs stream-disney.png`, usando `sharp`.
 Na família Dolby, o usuário autorizou reutilizar o cabeçalho aprovado por
 processamento local: símbolo duplo-D e palavra DOLBY são idênticos nos oito
 badges, mudando somente o texto dourado. O original aprovado e as camadas
@@ -36,9 +41,9 @@ oito originais e nas oito versões otimizadas. Para remontar usando as
 camadas salvas: `node scripts/compose-dolby.cjs --rebuild`, seguido de
 `node scripts/optimize-metallic.cjs` com os oito nomes da família.
 
-Estado da coleção: **75 imagens metálicas concluídas e publicadas**, incluindo
-Movies Anywhere. Disney+ mantém a imagem anterior, porque duas tentativas de
-geração foram recusadas pelo serviço; nenhuma imagem incompleta é publicada.
+Estado da coleção: **76 imagens concluídas e publicadas**: 75 metálicas, incluindo
+Movies Anywhere, e a imagem Disney+ fornecida pelo usuário. Todas usam novas URLs
+em `Badges/v2/`; as artes e a lista anteriores continuam preservadas.
 O 4K usa o modelo sem moldura do 8K em `Badges/v2/4k-matched/`.
 
 ## Movies Anywhere — MA

@@ -578,11 +578,13 @@
       "category": "platform",
       "main": "Disney+",
       "subtitle": "",
-      "palette": "Preserve official Disney lettering and arc/plus, glossy blue/silver finishes.",
-      "status": "pending",
+      "palette": "User-approved white Disney+ lettering with the supplied cyan-to-blue arc; no metallic restyling.",
+      "status": "ready",
       "original": "Originals/metallic-v2/stream-disney.png",
       "optimized": "Badges/v2/stream-disney.png",
-      "generationIssue": "Image generation was rejected by the service; the existing Disney badge remains active."
+      "artworkMethod": "User-supplied PNG; authorized local transparent-margin trim, resizing and compression only.",
+      "originalSHA256": "c3e1508f5efb877880a6b32bba65f42d8e0aab0e12cca2b642059d2ac40d8657",
+      "trimTransparent": true
     },
     {
       "file": "stream-hulu.png",

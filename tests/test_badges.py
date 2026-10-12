@@ -1,4 +1,5 @@
 """Offline coverage of the public Nuvio JSON and referenced PNG assets."""
+import hashlib
 import json
 from pathlib import Path
 import re
@@ -128,6 +129,24 @@ class BadgesTest(unittest.TestCase):
                 self.assertLessEqual(width, 960)
                 self.assertLessEqual(height, 240)
                 self.assertLess(optimized.stat().st_size, original.stat().st_size)
+
+    def test_disney_uses_the_approved_original_and_optimized_transparent_version(self):
+        plan = json.loads((ROOT / "design" / "metallic-v2.json").read_text(encoding="utf-8"))
+        asset = next(a for a in plan["assets"] if a["file"] == "stream-disney.png")
+        self.assertEqual(asset["status"], "ready")
+        self.assertNotIn("generationIssue", asset)
+        self.assertTrue(asset["trimTransparent"])
+        original = (ROOT / asset["original"]).read_bytes()
+        self.assertEqual(hashlib.sha256(original).hexdigest(), asset["originalSHA256"])
+        self.assertEqual(struct.unpack(">II", original[16:24]), (512, 512))
+        optimized = (ROOT / asset["optimized"]).read_bytes()
+        self.assertEqual(optimized[25], 6)
+        width, height = struct.unpack(">II", optimized[16:24])
+        self.assertGreater(width, height)
+        self.assertEqual(height, 240)
+        badge = next(f for f in DATA["filters"] if f["id"] == "dsnp")
+        self.assertTrue(badge["imageURL"].endswith("/Badges/v2/stream-disney.png"))
+        self.assertEqual(matched("Filme (2026) DSNP 2160p WEB-DL", "streaming"), {"dsnp"})
 
     def test_dolby_family_uses_one_approved_header_and_new_cache_safe_urls(self):
         plan = json.loads((ROOT / "design" / "metallic-v2.json").read_text(encoding="utf-8"))
