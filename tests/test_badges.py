@@ -74,12 +74,43 @@ class BadgesTest(unittest.TestCase):
         self.assertEqual(matched("PCM8ch", "audio-channels"), {"other-channel-count"})
         self.assertEqual(matched("PCM6ch", "audio-channels"), {"other-channel-count"})
 
-    def test_immersive_and_vision_combinations_keep_existing_rules(self):
+    def test_immersive_and_vision_are_independent_badges(self):
         self.assertEqual(matched("TrueHD7.1 Atmos", "audio-tech"), {"truehd", "dolby-atmos"})
-        self.assertEqual(matched("DDP5.1 Atmos DV", "video-tech"), {"vis-ddp-dv", "vis-atmos-dv"})
-        self.assertEqual(matched("TrueHD7.1 DV", "video-tech"), {"vis-truehd-dv"})
+        self.assertEqual(matched("DDP5.1 Atmos DV"), {"dolby-vision", "dolby-digital-plus", "dolby-atmos", "51-audio"})
+        self.assertEqual(matched("TrueHD7.1 DV"), {"dolby-vision", "truehd", "71-audio"})
         self.assertEqual(matched("DTS-HD.MA7.1 DTS-X", "audio-tech"), {"dts-hd-master-audio", "dts-x"})
         self.assertEqual(matched("DTS-HD.HR7.1 DTS:X", "audio-tech"), {"dts-hd-high-resolution", "dts-x"})
+
+    def test_dolby_variants_never_activate_combined_badges(self):
+        codecs = [
+            ("DD5.1", "dolby-digital", "51-audio"),
+            ("AC-3 5.1", "dolby-digital", "51-audio"),
+            ("Dolby Digital 5.1", "dolby-digital", "51-audio"),
+            ("DDP5.1", "dolby-digital-plus", "51-audio"),
+            ("DD+7.1", "dolby-digital-plus", "71-audio"),
+            ("E-AC-3 5.1", "dolby-digital-plus", "51-audio"),
+            ("Dolby Digital Plus 5.1", "dolby-digital-plus", "51-audio"),
+            ("TrueHD7.1", "truehd", "71-audio"),
+            ("Dolby TrueHD 7.1", "truehd", "71-audio"),
+        ]
+        for vision in ("DV", "DoVi", "Dolby Vision", "Dolby.Vision"):
+            for audio, codec, channels in codecs:
+                for text in (f"{vision} {audio} Atmos", f"{audio} Dolby Atmos {vision}",
+                             f"💎 {vision}\n🔊 {audio} Atmos"):
+                    with self.subTest(text=text):
+                        self.assertEqual(matched(text), {"dolby-vision", "dolby-atmos", codec, channels})
+        for text, expected in (
+            ("DV", {"dolby-vision"}), ("DV Atmos", {"dolby-vision", "dolby-atmos"}),
+            ("Dolby Atmos", {"dolby-atmos"}), ("DDP5.1", {"dolby-digital-plus", "51-audio"}),
+            ("TrueHD7.1", {"truehd", "71-audio"}), ("DVI Atmospheric", set()),
+            ("HDR10 DTS-HD.HR7.1", {"hdr10", "dts-hd-high-resolution", "71-audio"}),
+            ("HDR10 DV TrueHD7.1 Atmos", {"hdr10", "dolby-vision", "truehd", "71-audio", "dolby-atmos"}),
+        ):
+            with self.subTest(text=text):
+                self.assertEqual(matched(text), expected)
+        combos = [entry for entry in DATA["filters"] if entry["id"].startswith("vis-")]
+        self.assertEqual(len(combos), 4)
+        self.assertTrue(all(entry["isEnabled"] is False for entry in combos))
 
     def test_additional_image_video_and_source_tags(self):
         for tag, group, expected in (
@@ -101,15 +132,23 @@ class BadgesTest(unittest.TestCase):
                 content = (ROOT / "Badges" / name).read_bytes()
                 self.assertEqual(content[25], 6, "PNG must be RGBA for the dark TV interface")
 
-    def test_metallic_publication_preserves_all_matching_rules(self):
+    def test_publication_preserves_unrelated_matching_rules(self):
         legacy = json.loads((ROOT / "badges-legacy.json").read_text(encoding="utf-8"))
         self.assertEqual(DATA["groups"], legacy["groups"])
         by_id = {entry["id"]: entry for entry in DATA["filters"]}
         self.assertEqual(set(by_id), {entry["id"] for entry in legacy["filters"]} | {"ma"})
+        individual_dolby = {"dolby-vision", "dolby-atmos", "dolby-digital", "dolby-digital-plus", "truehd"}
         for previous in legacy["filters"]:
             current = by_id[previous["id"]]
-            self.assertEqual({key: value for key, value in current.items() if key != "imageURL"},
-                             {key: value for key, value in previous.items() if key != "imageURL"})
+            ignored = {"imageURL"}
+            if previous["id"].startswith("vis-"):
+                ignored.add("isEnabled")
+                self.assertFalse(current["isEnabled"])
+            elif previous["id"] in individual_dolby:
+                ignored.add("pattern")
+                self.assertTrue(current["isEnabled"])
+            self.assertEqual({key: value for key, value in current.items() if key not in ignored},
+                             {key: value for key, value in previous.items() if key not in ignored})
 
     def test_only_ready_metallic_images_are_activated_and_originals_preserved(self):
         plan = json.loads((ROOT / "design" / "metallic-v2.json").read_text(encoding="utf-8"))

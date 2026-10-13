@@ -140,7 +140,7 @@
       "borderColor": "#00000000",
       "textColor": "#00000000",
       "tagStyle": "filled and bordered",
-      "isEnabled": true,
+      "isEnabled": false,
       "type": "filter"
     },
     {
@@ -153,7 +153,7 @@
       "borderColor": "#00000000",
       "textColor": "#00000000",
       "tagStyle": "filled and bordered",
-      "isEnabled": true,
+      "isEnabled": false,
       "type": "filter"
     },
     {
@@ -166,7 +166,7 @@
       "borderColor": "#00000000",
       "textColor": "#00000000",
       "tagStyle": "filled and bordered",
-      "isEnabled": true,
+      "isEnabled": false,
       "type": "filter"
     },
     {
@@ -179,14 +179,14 @@
       "borderColor": "#00000000",
       "textColor": "#00000000",
       "tagStyle": "filled and bordered",
-      "isEnabled": true,
+      "isEnabled": false,
       "type": "filter"
     },
     {
       "id": "dolby-vision",
       "groupId": "video-tech",
       "name": "Dolby Vision",
-      "pattern": "(?i)^(?![\\s\\S]*(?:(?<![a-z0-9])(?:ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ec[\\s._-]*3|(?:dolby[\\s._-]*)?digital[\\s._-]*plus)(?=(?:[\\s._-]*[0-9]{1,2}\\.[0-9]{1,2}(?:\\.[0-9]{1,2})?)(?![0-9]|\\.[0-9])|[^a-z0-9]|$)|(?<![a-z0-9])(?:dd(?!p|\\+)|(?<!e[\\s._-])ac[\\s._-]*3|dolby[\\s._-]*digital(?![\\s._-]*plus))(?=(?:[\\s._-]*[0-9]{1,2}\\.[0-9]{1,2}(?:\\.[0-9]{1,2})?)(?![0-9]|\\.[0-9])|[^a-z0-9]|$)|(?<![a-z0-9])(?:(?:dolby[\\s._-]*)?true[\\s._-]*hd)(?=(?:[\\s._-]*[0-9]{1,2}\\.[0-9]{1,2}(?:\\.[0-9]{1,2})?)(?![0-9]|\\.[0-9])|[^a-z0-9]|$)|(?<![a-z0-9])(?:dolby[\\s._-]*)?atmos(?![a-z0-9])))[\\s\\S]*(?<![a-z0-9])(?:dolby[\\s._-]*vision|dovi|dv)(?![a-z0-9])",
+      "pattern": "(?i)(?<![a-z0-9])(?:dolby[\\s._-]*vision|dovi|dv)(?![a-z0-9])",
       "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/v2/dolby-unified/dolby_vision.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -277,7 +277,7 @@
       "id": "dolby-atmos",
       "groupId": "audio-tech",
       "name": "Dolby Atmos",
-      "pattern": "(?i)^(?![\\s\\S]*(?<![a-z0-9])(?:dolby[\\s._-]*vision|dovi|dv)(?![a-z0-9]))[\\s\\S]*(?<![a-z0-9])(?:dolby[\\s._-]*)?atmos(?![a-z0-9])",
+      "pattern": "(?i)(?<![a-z0-9])(?:dolby[\\s._-]*)?atmos(?![a-z0-9])",
       "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/v2/dolby-unified/dolby_atmos.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -290,7 +290,7 @@
       "id": "truehd",
       "groupId": "audio-tech",
       "name": "TrueHD",
-      "pattern": "(?i)^(?![\\s\\S]*(?<![a-z0-9])(?:dolby[\\s._-]*vision|dovi|dv)(?![a-z0-9]))[\\s\\S]*(?<![a-z0-9])(?:(?:dolby[\\s._-]*)?true[\\s._-]*hd)(?=(?:[\\s._-]*[0-9]{1,2}\\.[0-9]{1,2}(?:\\.[0-9]{1,2})?)(?![0-9]|\\.[0-9])|[^a-z0-9]|$)",
+      "pattern": "(?i)(?<![a-z0-9])(?:(?:dolby[\\s._-]*)?true[\\s._-]*hd)(?=(?:[\\s._-]*[0-9]{1,2}\\.[0-9]{1,2}(?:\\.[0-9]{1,2})?)(?![0-9]|\\.[0-9])|[^a-z0-9]|$)",
       "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/v2/truehd.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -303,7 +303,7 @@
       "id": "dolby-digital-plus",
       "groupId": "audio-tech",
       "name": "Dolby Digital Plus",
-      "pattern": "(?i)^(?![\\s\\S]*(?<![a-z0-9])(?:dolby[\\s._-]*vision|dovi|dv)(?![a-z0-9]))[\\s\\S]*(?<![a-z0-9])(?:ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ec[\\s._-]*3|(?:dolby[\\s._-]*)?digital[\\s._-]*plus)(?=(?:[\\s._-]*[0-9]{1,2}\\.[0-9]{1,2}(?:\\.[0-9]{1,2})?)(?![0-9]|\\.[0-9])|[^a-z0-9]|$)",
+      "pattern": "(?i)(?<![a-z0-9])(?:ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ec[\\s._-]*3|(?:dolby[\\s._-]*)?digital[\\s._-]*plus)(?=(?:[\\s._-]*[0-9]{1,2}\\.[0-9]{1,2}(?:\\.[0-9]{1,2})?)(?![0-9]|\\.[0-9])|[^a-z0-9]|$)",
       "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/v2/dolby-unified/dolby_digital_plus.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -316,7 +316,7 @@
       "id": "dolby-digital",
       "groupId": "audio-tech",
       "name": "Dolby Digital",
-      "pattern": "(?i)^(?![\\s\\S]*(?<![a-z0-9])(?:dolby[\\s._-]*vision|dovi|dv)(?![a-z0-9]))[\\s\\S]*(?<![a-z0-9])(?:dd(?!p|\\+)|(?<!e[\\s._-])ac[\\s._-]*3|dolby[\\s._-]*digital(?![\\s._-]*plus))(?=(?:[\\s._-]*[0-9]{1,2}\\.[0-9]{1,2}(?:\\.[0-9]{1,2})?)(?![0-9]|\\.[0-9])|[^a-z0-9]|$)",
+      "pattern": "(?i)(?<![a-z0-9])(?:dd(?!p|\\+)|(?<!e[\\s._-])ac[\\s._-]*3|dolby[\\s._-]*digital(?![\\s._-]*plus))(?=(?:[\\s._-]*[0-9]{1,2}\\.[0-9]{1,2}(?:\\.[0-9]{1,2})?)(?![0-9]|\\.[0-9])|[^a-z0-9]|$)",
       "imageURL": "https://raw.githubusercontent.com/HeliumMarcos/L1-Badges/main/Badges/v2/dolby-unified/dolby_digital.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",

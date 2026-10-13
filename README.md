@@ -12,8 +12,9 @@ Os nomes dos menus variam conforme a versão do aplicativo.
 ## Coleção metálica — publicação por famílias
 
 A URL principal passa a usar as novas imagens em `Badges/v2/` à medida que
-cada família é concluída e revisada. Nos 74 filtros anteriores, somente as URLs das imagens mudam;
-IDs, expressões e grupos são preservados. As imagens anteriores continuam
+cada família é concluída e revisada. IDs e grupos anteriores são preservados.
+Além das novas URLs, a separação Dolby abaixo altera somente os cinco filtros
+individuais e desativa os quatro combos. As outras expressões são preservadas. As imagens anteriores continuam
 no repositório e a lista anterior está em `badges-legacy.json`.
 
 Os PNGs para TV mantêm transparência, têm até 960×240 pixels e são
@@ -45,6 +46,19 @@ Estado da coleção: **76 imagens concluídas e publicadas**: 75 metálicas, inc
 Movies Anywhere, e a imagem Disney+ fornecida pelo usuário. Todas usam novas URLs
 em `Badges/v2/`; as artes e a lista anteriores continuam preservadas.
 O 4K usa o modelo sem moldura do 8K em `Badges/v2/4k-matched/`.
+
+## Dolby — badges separados
+
+Dolby Vision, Dolby Atmos, Dolby Digital, Dolby Digital Plus e TrueHD aparecem
+individualmente, mesmo quando o arquivo reúne essas tecnologias. Por exemplo,
+`2160p DV HDR10 DDP5.1 Atmos` mostra Vision, HDR10, Digital Plus, 5.1 e Atmos,
+além da resolução, sem imagens combinadas. Atmos não presume DD+, TrueHD ou
+canais, e Dolby Vision não oculta o codec de áudio.
+
+Os quatro filtros `vis-*` permanecem na lista com `isEnabled: false` para
+preservar seus IDs e desativá-los ao reimportar. Suas imagens e originais
+continuam arquivados, mas não são exibidos. Há **75 filtros cadastrados,
+71 ativos**. Reimporte a URL principal no Nuvio para aplicar essa mudança.
 
 ## Movies Anywhere — MA
 
@@ -79,7 +93,8 @@ As expressões foram verificadas também em Java Pattern, usado pelo Nuvio:
   automaticamente uma resolução 2160p quando o nome informa 1080p.
 
 Os 50 filtros anteriores e suas imagens foram preservados; a lista passa a
-74 filtros. Os combos de Dolby Vision continuam usando as imagens existentes.
+74 filtros naquela etapa. Os combos de Dolby Vision agora estão desativados,
+conforme a seção de badges separados acima.
 
 Exemplo confirmado nos testes, tanto no nome original quanto no título
 formatado pelo Stream Helium:
